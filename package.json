@@ -1,0 +1,18 @@
+{
+  "name": "how-big-is-that",
+  "version": "0.1.0",
+  "description": "Scrape real-world size/weight data and build a comparison website",
+  "type": "module",
+  "scripts": {
+    "scrape": "node scrape.js",
+    "scrape:wikipedia": "node scrape.js --source=wikipedia",
+    "scrape:countries": "node scrape.js --source=countries",
+    "build": "node build.js",
+    "all": "npm run scrape && npm run build"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "dotenv": "^17.4.2",
+    "node-fetch": "^3.3.2"
+  }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>How Big Is That?</title>
+    <meta name="description"
+          content="Enter any measurement and see what it compares to — from atoms to galaxies.">
+    <link rel="stylesheet"
+          href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>How Big Is That?</h1>
+            <p>Enter any measurement. We'll tell you what it compares to.</p>
+            <div class="badge"><strong id="badge-count">…</strong> reference objects</div>
+        </header>
+
+        <!-- Scale selector: custom radio buttons -->
+        <div class="scale-selector"
+             role="radiogroup"
+             aria-label="Measurement type">
+            <input type="radio"
+                   name="scale"
+                   id="scale-weight"
+                   value="weight"
+                   checked>
+            <label for="scale-weight">
+                <i class="label-icon">⚖️</i>
+                Weight
+            </label>
+
+            <input type="radio"
+                   name="scale"
+                   id="scale-length"
+                   value="length">
+            <label for="scale-length">
+                <i class="label-icon">📏</i>
+                Length
+            </label>
+
+            <input type="radio"
+                   name="scale"
+                   id="scale-area"
+                   value="area">
+            <label for="scale-area">
+                <i class="label-icon">📐</i>
+                Area
+            </label>
+
+            <input type="radio"
+                   name="scale"
+                   id="scale-volume"
+                   value="volume">
+            <label for="scale-volume">
+                <i class="label-icon">🧊</i>
+                Volume
+            </label>
+        </div>
+
+        <!-- Input -->
+        <div class="input-group">
+            <input type="text"
+                   id="value-input"
+                   class="input-value"
+                   placeholder="Enter a value…"
+                   autocomplete="off"
+                   autofocus>
+            <div class="input-divider"></div>
+            <input type="text"
+                   id="unit-input"
+                   class="input-unit"
+                   placeholder="kg"
+                   autocomplete="off">
+        </div>
+
+        <!-- Results -->
+        <div class="results"
+             id="results">
+            <div class="results-intro">
+                <div class="si-value"
+                     id="si-value"></div>
+            </div>
+
+            <div class="fun-sentence"
+                 id="fun-sentence"></div>
+
+            <div class="section-title">Closest comparisons</div>
+            <div id="cards"></div>
+        </div>
+
+        <!-- Empty state (shown before first search) -->
+        <div class="empty-state"
+             id="empty-state">
+            <div class="big">⚖️ 📏 📐 🧊</div>
+            <p>Type a number above — try <strong>85 kg</strong> or <strong>300 m</strong></p>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        Data sourced from
+        <a href="https://en.wikipedia.org/wiki/Category:Orders_of_magnitude"
+           target="_blank"
+           rel="noopener">Wikipedia</a>,
+        <a href="https://restcountries.com"
+           target="_blank"
+           rel="noopener">REST Countries</a>
+        and
+        <a href="https://api.le-systeme-solaire.net"
+           target="_blank"
+           rel="noopener">Le Système Solaire</a>
+        · All values approximate
+    </footer>
+
+    <script type="module"
+            src="js/app.js"></script>
+</body>
+
+</html>
