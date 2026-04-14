@@ -12,10 +12,15 @@
  * and extract rows.
  */
 
-import fetch from 'node-fetch';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import * as cheerio from 'cheerio';
 import BaseScraper from './base-scraper.js';
-import { lookupUnit, toSI } from './units.js';
+import { toSI } from './units.js';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const CACHE_DIR = path.join(__dirname, '..', '.cache');
 
 const PAGES = [
   {
@@ -151,13 +156,31 @@ export default class WikipediaScraper extends BaseScraper {
     return allEntries;
   }
 
-  async scrapePage({ title, type, defaultUnit, category }) {
+  async fetchPageHtml(title) {
+    fs.mkdirSync(CACHE_DIR, { recursive: true });
+    const cachePath = path.join(CACHE_DIR, `${title}.html`);
+
+    if (fs.existsSync(cachePath)) {
+      this.log(`  (using cached ${title})`);
+      return fs.readFileSync(cachePath, 'utf-8');
+    }
+
     const url = `${API_BASE}?action=parse&page=${title}&format=json&prop=text&redirects=`;
     const resp = await fetch(url, {
       headers: { 'User-Agent': 'HowBigIsBot/1.0 (educational project)' },
     });
     const json = await resp.json();
     const html = json?.parse?.text?.['*'];
+
+    if (html) {
+      fs.writeFileSync(cachePath, html);
+    }
+
+    return html;
+  }
+
+  async scrapePage({ title, type, defaultUnit, category }) {
+    const html = await this.fetchPageHtml(title);
 
     if (!html) {
       this.log(`  ⚠ No HTML returned for ${title}`);
