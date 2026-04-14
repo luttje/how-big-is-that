@@ -77,6 +77,12 @@ function parseValue(raw) {
   // e.g. "10−3" without the × prefix
   s = s.replace(/\b10\s*[\^]?\s*([−\-]\d+)/g, '1e$1');
 
+  // Collapse range expressions that have an exponent, e.g.
+  //   "2–3e-7"      → "2e-7"      (fruit fly mass)
+  //   "1.74-1.83e5" → "1.74e5"    (Boeing 747 mass)
+  // Takes the first (lower) value and preserves the shared exponent.
+  s = s.replace(/^([\d.]+)\s*[–—\-]\s*[\d.]+\s*(e[+-]?\d+)/i, '$1$2');
+
   // Try parsing
   const n = parseFloat(s);
 
