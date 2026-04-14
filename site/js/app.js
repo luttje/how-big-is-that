@@ -166,12 +166,11 @@ function update() {
     valueSI = num;
   }
 
-  // Show SI value — if unit is recognised, keep the entered unit to avoid
-  // confusing cross-prefix conversions (e.g. 300 µg → "300 nkg" otherwise)
+  // Show SI value in a human-friendly unit
   if (info) {
-    $siValue.innerHTML = formatSI(num) + ' <small>' + escHtml(unit) + '</small>';
+    $siValue.innerHTML = formatWithUnit(valueSI, info.type);
   } else {
-    $siValue.innerHTML = formatSI(valueSI) + ' <small>' + SI_LABELS[currentType] + '</small>';
+    $siValue.innerHTML = formatWithUnit(valueSI, currentType);
   }
 
   // Filter data by current type
@@ -231,7 +230,7 @@ function renderCard(item, isClosest) {
         </div>
         <div class="card-right">
           <div class="card-factor">${factor}</div>
-          <div class="card-desc">${formatSI(item.valueSI)} ${SI_LABELS[item.type]}</div>
+          <div class="card-desc">${formatWithUnit(item.valueSI, item.type)}</div>
         </div>
       </div>`;
 }
@@ -324,6 +323,33 @@ function formatSI(val) {
     return (val * 1e9).toFixed(2) + ' n';
 
   return val.toExponential(2);
+}
+
+const WEIGHT_SCALES = [
+  { threshold: 1e12, divisor: 1e12, unit: 'Gt' },
+  { threshold: 1e9,  divisor: 1e9,  unit: 'Mt' },
+  { threshold: 1e6,  divisor: 1e6,  unit: 'kt' },
+  { threshold: 1e3,  divisor: 1e3,  unit: 't' },
+  { threshold: 1,    divisor: 1,    unit: 'kg' },
+  { threshold: 1e-3, divisor: 1e-3, unit: 'g' },
+  { threshold: 1e-6, divisor: 1e-6, unit: 'mg' },
+  { threshold: 1e-9, divisor: 1e-9, unit: 'µg' },
+  { threshold: 1e-12, divisor: 1e-12, unit: 'ng' },
+];
+
+function formatWithUnit(valueSI, type) {
+  if (type === 'weight') {
+    const abs = Math.abs(valueSI);
+
+    for (const { threshold, divisor, unit } of WEIGHT_SCALES) {
+      if (abs >= threshold)
+        return (valueSI / divisor).toFixed(2) + ' ' + unit;
+    }
+
+    return valueSI.toExponential(2) + ' kg';
+  }
+
+  return formatSI(valueSI) + ' ' + SI_LABELS[type];
 }
 
 function escHtml(s) {
