@@ -1,0 +1,44 @@
+name: Run Scrapers
+
+on:
+  # We explicitly do not use `pull_request_target` here, as we want to block PRs from running the scrapers
+  # until a maintainer has reviewed the scrape.js file and ensure it doesn't exfiltrate secrets.
+  pull_request:
+    paths:
+    - 'scrape.js'
+    - 'scrapers/**'
+  workflow_dispatch:
+
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout PR branch
+      uses: actions/checkout@v6
+      with:
+        repository: ${{ github.event.pull_request.head.repo.full_name }}
+        ref: ${{ github.head_ref }}
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v6
+      with:
+        node-version: 'lts/*'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run scrapers and build site
+      env:
+        LE_SYSTEME_SOLAIRE_API_KEY: ${{ secrets.LE_SYSTEME_SOLAIRE_API_KEY }}
+      run: npm run all
+
+    - name: Commit scraped data
+      uses: stefanzweifel/git-auto-commit-action@v7
+      with:
+        commit_message: "chore: update scraped data"
+        file_pattern: 'data/*.json site/data/*.json'
