@@ -41,5 +41,4 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v7
       with:
         commit_message: "chore: update scraped data"
-        file_pattern: 'data/*.json site/data/*.json'
-        add_options: '--ignore-unmatch'
+        file_pattern: 'data/ site/data/'
