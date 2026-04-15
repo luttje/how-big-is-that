@@ -8976,6 +8976,17 @@
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
   },
   {
+    "name": "One drop from a high resolution colour inkjet printer",
+    "value": 2e-15,
+    "unit": "m3",
+    "valueSI": 2e-15,
+    "type": "volume",
+    "category": "various",
+    "description": "One drop from a high resolution colour inkjet printer",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
+  },
+  {
     "name": "a very fine grain of sand (0.063 mm diameter, 3 micrograms)",
     "value": 1.3e-13,
     "unit": "m3",
@@ -9141,6 +9152,17 @@
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
   },
   {
+    "name": "Average human ejaculation",
+    "value": 0.000003,
+    "unit": "m3",
+    "valueSI": 0.000003,
+    "type": "volume",
+    "category": "living thing",
+    "description": "Average human ejaculation",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
+  },
+  {
     "name": "One imperial fluid drachm",
     "value": 0.00000355,
     "unit": "m3",
@@ -9148,6 +9170,17 @@
     "type": "volume",
     "category": "various",
     "description": "One imperial fluid drachm",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
+  },
+  {
+    "name": "One teaspoon",
+    "value": 0.00000355,
+    "unit": "m3",
+    "valueSI": 0.00000355,
+    "type": "volume",
+    "category": "various",
+    "description": "One teaspoon",
     "source": "wikipedia-orders-of-magnitude",
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
   },
@@ -9170,6 +9203,17 @@
     "type": "volume",
     "category": "various",
     "description": "One ligula",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
+  },
+  {
+    "name": "One tablespoon",
+    "value": 0.0000142,
+    "unit": "m3",
+    "valueSI": 0.0000142,
+    "type": "volume",
+    "category": "various",
+    "description": "One tablespoon",
     "source": "wikipedia-orders-of-magnitude",
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
   },
@@ -9317,6 +9361,17 @@
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
   },
   {
+    "name": "Volume of stubby or steinie of beer (Europe–330 mL, Canada–341 mL, Japan–350 mL, US–355 mL, Australia–375 mL)",
+    "value": 0.00033,
+    "unit": "m3",
+    "valueSI": 0.00033,
+    "type": "volume",
+    "category": "various",
+    "description": "Volume of stubby or steinie of beer (Europe–330 mL, Canada–341 mL, Japan–350 mL, US–355 mL, Australia–375 mL)",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
+  },
+  {
     "name": "Rough volume of the human urinary bladder",
     "value": 0.0004,
     "unit": "m3",
@@ -9401,6 +9456,17 @@
     "type": "volume",
     "category": "various",
     "description": "One cubic decimetre or one litre",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
+  },
+  {
+    "name": "Typical range of automobile engine displacements",
+    "value": 0.001,
+    "unit": "m3",
+    "valueSI": 0.001,
+    "type": "volume",
+    "category": "vehicle",
+    "description": "Typical range of automobile engine displacements",
     "source": "wikipedia-orders-of-magnitude",
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
   },
@@ -9570,6 +9636,17 @@
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
   },
   {
+    "name": "One Ancient Greek amphora",
+    "value": 0.0185,
+    "unit": "m3",
+    "valueSI": 0.0185,
+    "type": "volume",
+    "category": "various",
+    "description": "One Ancient Greek amphora",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
+  },
+  {
     "name": "One Roman amphora",
     "value": 0.0262,
     "unit": "m3",
@@ -9625,6 +9702,17 @@
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
   },
   {
+    "name": "One firkin",
+    "value": 0.037,
+    "unit": "m3",
+    "valueSI": 0.037,
+    "type": "volume",
+    "category": "various",
+    "description": "One firkin",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
+  },
+  {
     "name": "Gasoline fuel tank in a car (Volvo 240)",
     "value": 0.06,
     "unit": "m3",
@@ -9636,6 +9724,17 @@
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
   },
   {
+    "name": "One rundlet",
+    "value": 0.068,
+    "unit": "m3",
+    "valueSI": 0.068,
+    "type": "volume",
+    "category": "various",
+    "description": "One rundlet",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
+  },
+  {
     "name": "Average volume of an adult human",
     "value": 0.071,
     "unit": "m3",
@@ -9643,6 +9742,17 @@
     "type": "volume",
     "category": "living thing",
     "description": "Average volume of an adult human",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
+  },
+  {
+    "name": "One kilderkin",
+    "value": 0.074,
+    "unit": "m3",
+    "valueSI": 0.074,
+    "type": "volume",
+    "category": "various",
+    "description": "One kilderkin",
     "source": "wikipedia-orders-of-magnitude",
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
   },
@@ -9735,6 +9845,39 @@
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
   },
   {
+    "name": "One hogshead",
+    "value": 0.22,
+    "unit": "m3",
+    "valueSI": 0.22,
+    "type": "volume",
+    "category": "various",
+    "description": "One hogshead",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
+  },
+  {
+    "name": "One puncheon or tertian",
+    "value": 0.31,
+    "unit": "m3",
+    "valueSI": 0.31,
+    "type": "volume",
+    "category": "various",
+    "description": "One puncheon or tertian",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
+  },
+  {
+    "name": "One butt (an old unit for beer and wine)",
+    "value": 0.47,
+    "unit": "m3",
+    "valueSI": 0.47,
+    "type": "volume",
+    "category": "various",
+    "description": "One butt (an old unit for beer and wine)",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
+  },
+  {
     "name": "One culeus",
     "value": 0.524,
     "unit": "m3",
@@ -9757,13 +9900,13 @@
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
   },
   {
-    "name": "Typical range of automobile engine displacements",
-    "value": 1,
+    "name": "One tun (an old unit for beer and wine)",
+    "value": 0.95,
     "unit": "m3",
-    "valueSI": 1,
+    "valueSI": 0.95,
     "type": "volume",
-    "category": "vehicle",
-    "description": "Typical range of automobile engine displacements",
+    "category": "various",
+    "description": "One tun (an old unit for beer and wine)",
     "source": "wikipedia-orders-of-magnitude",
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
   },
@@ -9775,182 +9918,6 @@
     "type": "volume",
     "category": "various",
     "description": "One cubic metre, one kilolitre or one stère—volume of a large domestic fridge-freezer (external dimensions)",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
-  },
-  {
-    "name": "One tablespoon",
-    "value": 1.42,
-    "unit": "m3",
-    "valueSI": 1.42,
-    "type": "volume",
-    "category": "various",
-    "description": "One tablespoon",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
-  },
-  {
-    "name": "One Ancient Greek amphora",
-    "value": 1.85,
-    "unit": "m3",
-    "valueSI": 1.85,
-    "type": "volume",
-    "category": "various",
-    "description": "One Ancient Greek amphora",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
-  },
-  {
-    "name": "One drop from a high resolution colour inkjet printer",
-    "value": 2,
-    "unit": "m3",
-    "valueSI": 2,
-    "type": "volume",
-    "category": "various",
-    "description": "One drop from a high resolution colour inkjet printer",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
-  },
-  {
-    "name": "One hogshead",
-    "value": 2.2,
-    "unit": "m3",
-    "valueSI": 2.2,
-    "type": "volume",
-    "category": "various",
-    "description": "One hogshead",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
-  },
-  {
-    "name": "Average human ejaculation",
-    "value": 3,
-    "unit": "m3",
-    "valueSI": 3,
-    "type": "volume",
-    "category": "living thing",
-    "description": "Average human ejaculation",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
-  },
-  {
-    "name": "One puncheon or tertian",
-    "value": 3.1,
-    "unit": "m3",
-    "valueSI": 3.1,
-    "type": "volume",
-    "category": "various",
-    "description": "One puncheon or tertian",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
-  },
-  {
-    "name": "Volume of the Great Wall of China",
-    "value": 3.2,
-    "unit": "m3",
-    "valueSI": 3.2,
-    "type": "volume",
-    "category": "structure",
-    "description": "Volume of the Great Wall of China",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
-  },
-  {
-    "name": "Volume of stubby or steinie of beer (Europe–330 mL, Canada–341 mL, Japan–350 mL, US–355 mL, Australia–375 mL)",
-    "value": 3.3,
-    "unit": "m3",
-    "valueSI": 3.3,
-    "type": "volume",
-    "category": "various",
-    "description": "Volume of stubby or steinie of beer (Europe–330 mL, Canada–341 mL, Japan–350 mL, US–355 mL, Australia–375 mL)",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
-  },
-  {
-    "name": "One teaspoon",
-    "value": 3.55,
-    "unit": "m3",
-    "valueSI": 3.55,
-    "type": "volume",
-    "category": "various",
-    "description": "One teaspoon",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
-  },
-  {
-    "name": "One firkin",
-    "value": 3.7,
-    "unit": "m3",
-    "valueSI": 3.7,
-    "type": "volume",
-    "category": "various",
-    "description": "One firkin",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
-  },
-  {
-    "name": "One butt (an old unit for beer and wine)",
-    "value": 4.7,
-    "unit": "m3",
-    "valueSI": 4.7,
-    "type": "volume",
-    "category": "various",
-    "description": "One butt (an old unit for beer and wine)",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
-  },
-  {
-    "name": "Possible volume of the Heliosphere inside the termination shock",
-    "value": 6,
-    "unit": "m3",
-    "valueSI": 6,
-    "type": "volume",
-    "category": "various",
-    "description": "Possible volume of the Heliosphere inside the termination shock",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
-  },
-  {
-    "name": "One rundlet",
-    "value": 6.8,
-    "unit": "m3",
-    "valueSI": 6.8,
-    "type": "volume",
-    "category": "various",
-    "description": "One rundlet",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
-  },
-  {
-    "name": "One kilderkin",
-    "value": 7.4,
-    "unit": "m3",
-    "valueSI": 7.4,
-    "type": "volume",
-    "category": "various",
-    "description": "One kilderkin",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
-  },
-  {
-    "name": "Volume of the Royal Albert Hall auditorium",
-    "value": 8.5,
-    "unit": "m3",
-    "valueSI": 8.5,
-    "type": "volume",
-    "category": "various",
-    "description": "Volume of the Royal Albert Hall auditorium",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
-  },
-  {
-    "name": "One tun (an old unit for beer and wine)",
-    "value": 9.5,
-    "unit": "m3",
-    "valueSI": 9.5,
-    "type": "volume",
-    "category": "various",
-    "description": "One tun (an old unit for beer and wine)",
     "source": "wikipedia-orders-of-magnitude",
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
   },
@@ -10083,6 +10050,17 @@
     "type": "volume",
     "category": "various",
     "description": "Typical volume of a large gasometer",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
+  },
+  {
+    "name": "Volume of the Royal Albert Hall auditorium",
+    "value": 85000,
+    "unit": "m3",
+    "valueSI": 85000,
+    "type": "volume",
+    "category": "various",
+    "description": "Volume of the Royal Albert Hall auditorium",
     "source": "wikipedia-orders-of-magnitude",
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
   },
@@ -10325,6 +10303,17 @@
     "type": "volume",
     "category": "geography",
     "description": "Volume of Lake Halwill, Switzerland",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
+  },
+  {
+    "name": "Volume of the Great Wall of China",
+    "value": 320000000,
+    "unit": "m3",
+    "valueSI": 320000000,
+    "type": "volume",
+    "category": "structure",
+    "description": "Volume of the Great Wall of China",
     "source": "wikipedia-orders-of-magnitude",
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
   },
@@ -11957,6 +11946,17 @@
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
   },
   {
+    "name": "Possible volume of the Heliosphere inside the termination shock",
+    "value": 6e+39,
+    "unit": "m3",
+    "valueSI": 6e+39,
+    "type": "volume",
+    "category": "various",
+    "description": "Possible volume of the Heliosphere inside the termination shock",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(volume)"
+  },
+  {
     "name": "One cubic petametre",
     "value": 1e+45,
     "unit": "m3",
@@ -12206,6 +12206,17 @@
     "type": "weight",
     "category": "object",
     "description": "Electron (511 keV/c2), the lightest elementary particle with a measured nonzero rest mass",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
+  },
+  {
+    "name": "Up quark (as a current quark) (1.7–3.1 MeV/c2)",
+    "value": 3e-30,
+    "unit": "kg",
+    "valueSI": 3e-30,
+    "type": "weight",
+    "category": "various",
+    "description": "Up quark (as a current quark) (1.7–3.1 MeV/c2)",
     "source": "wikipedia-orders-of-magnitude",
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
   },
@@ -12617,6 +12628,17 @@
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
   },
   {
+    "name": "HeLa human cell",
+    "value": 2e-12,
+    "unit": "kg",
+    "valueSI": 2e-12,
+    "type": "weight",
+    "category": "living thing",
+    "description": "HeLa human cell",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
+  },
+  {
     "name": "Grain of birch pollen",
     "value": 8e-12,
     "unit": "kg",
@@ -12727,6 +12749,17 @@
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
   },
   {
+    "name": "Fruit fly (dry weight)",
+    "value": 2e-7,
+    "unit": "kg",
+    "valueSI": 2e-7,
+    "type": "weight",
+    "category": "living thing",
+    "description": "Fruit fly (dry weight)",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
+  },
+  {
     "name": "Mosquitoes, common smaller species (about 2.5 milligrams), grain of salt or sand, medicines are typically expressed in milligrams",
     "value": 0.0000025,
     "unit": "kg",
@@ -12756,6 +12789,17 @@
     "type": "weight",
     "category": "living thing",
     "description": "Adult housefly (Musca domestica, 21.4 milligrams)",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
+  },
+  {
+    "name": "Range of amounts of caffeine in one cup of coffee (27–200 milligrams)",
+    "value": 0.000027,
+    "unit": "kg",
+    "valueSI": 0.000027,
+    "type": "weight",
+    "category": "various",
+    "description": "Range of amounts of caffeine in one cup of coffee (27–200 milligrams)",
     "source": "wikipedia-orders-of-magnitude",
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
   },
@@ -12848,6 +12892,17 @@
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
   },
   {
+    "name": "Adult mouse (Mus musculus, 20–40 grams)",
+    "value": 0.02,
+    "unit": "kg",
+    "valueSI": 0.02,
+    "type": "weight",
+    "category": "living thing",
+    "description": "Adult mouse (Mus musculus, 20–40 grams)",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
+  },
+  {
     "name": "Ounce (avoirdupois) (28.3495 grams)",
     "value": 0.028,
     "unit": "kg",
@@ -12892,17 +12947,6 @@
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
   },
   {
-    "name": "Range of amounts of caffeine in one cup of coffee (27–200 milligrams)",
-    "value": 0.27,
-    "unit": "kg",
-    "valueSI": 0.27,
-    "type": "weight",
-    "category": "various",
-    "description": "Range of amounts of caffeine in one cup of coffee (27–200 milligrams)",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
-  },
-  {
     "name": "Pound (avoirdupois) (453.6 grams)",
     "value": 0.454,
     "unit": "kg",
@@ -12910,17 +12954,6 @@
     "type": "weight",
     "category": "various",
     "description": "Pound (avoirdupois) (453.6 grams)",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
-  },
-  {
-    "name": "Global biomass of fish",
-    "value": 0.8,
-    "unit": "kg",
-    "valueSI": 0.8,
-    "type": "weight",
-    "category": "living thing",
-    "description": "Global biomass of fish",
     "source": "wikipedia-orders-of-magnitude",
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
   },
@@ -12958,83 +12991,6 @@
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
   },
   {
-    "name": "Local or Virgo Supercluster of galaxies, including the Local Group (1×1015 M☉)",
-    "value": 1,
-    "unit": "kg",
-    "valueSI": 1,
-    "type": "weight",
-    "category": "various",
-    "description": "Local or Virgo Supercluster of galaxies, including the Local Group (1×1015 M☉)",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
-  },
-  {
-    "name": "Operational empty weight of a Boeing 747-300",
-    "value": 1.74,
-    "unit": "kg",
-    "valueSI": 1.74,
-    "type": "weight",
-    "category": "aircraft",
-    "description": "Operational empty weight of a Boeing 747-300",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
-  },
-  {
-    "name": "HeLa human cell",
-    "value": 2,
-    "unit": "kg",
-    "valueSI": 2,
-    "type": "weight",
-    "category": "living thing",
-    "description": "HeLa human cell",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
-  },
-  {
-    "name": "Fruit fly (dry weight)",
-    "value": 2,
-    "unit": "kg",
-    "valueSI": 2,
-    "type": "weight",
-    "category": "living thing",
-    "description": "Fruit fly (dry weight)",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
-  },
-  {
-    "name": "Adult mouse (Mus musculus, 20–40 grams)",
-    "value": 2,
-    "unit": "kg",
-    "valueSI": 2,
-    "type": "weight",
-    "category": "living thing",
-    "description": "Adult mouse (Mus musculus, 20–40 grams)",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
-  },
-  {
-    "name": "Brown dwarfs (approximate)",
-    "value": 2,
-    "unit": "kg",
-    "valueSI": 2,
-    "type": "weight",
-    "category": "various",
-    "description": "Brown dwarfs (approximate)",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
-  },
-  {
-    "name": "Up quark (as a current quark) (1.7–3.1 MeV/c2)",
-    "value": 3,
-    "unit": "kg",
-    "valueSI": 3,
-    "type": "weight",
-    "category": "various",
-    "description": "Up quark (as a current quark) (1.7–3.1 MeV/c2)",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
-  },
-  {
     "name": "Women's shot",
     "value": 4,
     "unit": "kg",
@@ -13042,17 +12998,6 @@
     "type": "weight",
     "category": "various",
     "description": "Women's shot",
-    "source": "wikipedia-orders-of-magnitude",
-    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
-  },
-  {
-    "name": "R136a1, the most massive of known stars (230 to 345 M☉)",
-    "value": 4,
-    "unit": "kg",
-    "valueSI": 4,
-    "type": "weight",
-    "category": "various",
-    "description": "R136a1, the most massive of known stars (230 to 345 M☉)",
     "source": "wikipedia-orders-of-magnitude",
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
   },
@@ -13229,6 +13174,17 @@
     "type": "weight",
     "category": "living thing",
     "description": "Largest dinosaur, Argentinosaurus (73 tonnes)",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
+  },
+  {
+    "name": "Operational empty weight of a Boeing 747-300",
+    "value": 174000,
+    "unit": "kg",
+    "valueSI": 174000,
+    "type": "weight",
+    "category": "aircraft",
+    "description": "Operational empty weight of a Boeing 747-300",
     "source": "wikipedia-orders-of-magnitude",
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
   },
@@ -13484,6 +13440,17 @@
     "description": "Mass of Aten (Asteroid)",
     "source": "le-systeme-solaire",
     "sourceUrl": "https://api.le-systeme-solaire.net/rest/bodies/aton"
+  },
+  {
+    "name": "Global biomass of fish",
+    "value": 800000000000,
+    "unit": "kg",
+    "valueSI": 800000000000,
+    "type": "weight",
+    "category": "living thing",
+    "description": "Global biomass of fish",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
   },
   {
     "name": "S/2003 J 12 (Moon)",
@@ -16104,6 +16071,17 @@
     "sourceUrl": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
   },
   {
+    "name": "Brown dwarfs (approximate)",
+    "value": 2e+28,
+    "unit": "kg",
+    "valueSI": 2e+28,
+    "type": "weight",
+    "category": "various",
+    "description": "Brown dwarfs (approximate)",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
+  },
+  {
     "name": "Sun (Star)",
     "value": 1.9890000000000002e+30,
     "unit": "kg",
@@ -16122,6 +16100,17 @@
     "type": "weight",
     "category": "various",
     "description": "Chandrasekhar limit (1.4 M☉)",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
+  },
+  {
+    "name": "R136a1, the most massive of known stars (230 to 345 M☉)",
+    "value": 4e+32,
+    "unit": "kg",
+    "valueSI": 4e+32,
+    "type": "weight",
+    "category": "various",
+    "description": "R136a1, the most massive of known stars (230 to 345 M☉)",
     "source": "wikipedia-orders-of-magnitude",
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
   },
@@ -16155,6 +16144,17 @@
     "type": "weight",
     "category": "various",
     "description": "The entire Carina complex.",
+    "source": "wikipedia-orders-of-magnitude",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
+  },
+  {
+    "name": "Local or Virgo Supercluster of galaxies, including the Local Group (1×1015 M☉)",
+    "value": 1e+45,
+    "unit": "kg",
+    "valueSI": 1e+45,
+    "type": "weight",
+    "category": "various",
+    "description": "Local or Virgo Supercluster of galaxies, including the Local Group (1×1015 M☉)",
     "source": "wikipedia-orders-of-magnitude",
     "sourceUrl": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)"
   },

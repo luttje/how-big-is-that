@@ -12,10 +12,15 @@
  * and extract rows.
  */
 
-import fetch from 'node-fetch';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import * as cheerio from 'cheerio';
 import BaseScraper from './base-scraper.js';
-import { lookupUnit, toSI } from './units.js';
+import { toSI } from './units.js';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const CACHE_DIR = path.join(__dirname, '..', '.cache');
 
 const PAGES = [
   {
@@ -71,6 +76,12 @@ function parseValue(raw) {
   // Handle superscript digits that may have been flattened
   // e.g. "10−3" without the × prefix
   s = s.replace(/\b10\s*[\^]?\s*([−\-]\d+)/g, '1e$1');
+
+  // Collapse range expressions that have an exponent, e.g.
+  //   "2–3e-7"      → "2e-7"      (fruit fly mass)
+  //   "1.74-1.83e5" → "1.74e5"    (Boeing 747 mass)
+  // Takes the first (lower) value and preserves the shared exponent.
+  s = s.replace(/^([\d.]+)\s*[–—\-]\s*[\d.]+\s*(e[+-]?\d+)/i, '$1$2');
 
   // Try parsing
   const n = parseFloat(s);
@@ -151,13 +162,31 @@ export default class WikipediaScraper extends BaseScraper {
     return allEntries;
   }
 
-  async scrapePage({ title, type, defaultUnit, category }) {
+  async fetchPageHtml(title) {
+    fs.mkdirSync(CACHE_DIR, { recursive: true });
+    const cachePath = path.join(CACHE_DIR, `${title}.html`);
+
+    if (fs.existsSync(cachePath)) {
+      this.log(`  (using cached ${title})`);
+      return fs.readFileSync(cachePath, 'utf-8');
+    }
+
     const url = `${API_BASE}?action=parse&page=${title}&format=json&prop=text&redirects=`;
     const resp = await fetch(url, {
       headers: { 'User-Agent': 'HowBigIsBot/1.0 (educational project)' },
     });
     const json = await resp.json();
     const html = json?.parse?.text?.['*'];
+
+    if (html) {
+      fs.writeFileSync(cachePath, html);
+    }
+
+    return html;
+  }
+
+  async scrapePage({ title, type, defaultUnit, category }) {
+    const html = await this.fetchPageHtml(title);
 
     if (!html) {
       this.log(`  ⚠ No HTML returned for ${title}`);
