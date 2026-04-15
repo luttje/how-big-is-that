@@ -22,6 +22,12 @@ const EMOJI_MAP = {
   various: '📐',
 };
 
+// Locale-aware number separators (computed once from the browser locale)
+const _localeParts = new Intl.NumberFormat().formatToParts(1234.5);
+const LOCALE_DECIMAL_SEP = _localeParts.find(p => p.type === 'decimal')?.value ?? '.';
+const LOCALE_GROUP_SEP = _localeParts.find(p => p.type === 'group')?.value ?? ',';
+console.debug(`[locale] decimal='${LOCALE_DECIMAL_SEP}', group='${LOCALE_GROUP_SEP}' (${navigator.language})`);
+
 // State
 let DATA = [];
 let currentType = 'weight';
@@ -138,10 +144,15 @@ function update() {
   }
   if ($emptyState) $emptyState.style.display = 'none';
 
-  // Parse number
-  let num = parseFloat(rawVal.replace(/,/g, '')
+  // Parse number – normalise group/decimal separators using the browser locale
+  const escapedGroup = LOCALE_GROUP_SEP.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const escapedDecimal = LOCALE_DECIMAL_SEP.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const normalised = rawVal
+    .replace(new RegExp(escapedGroup, 'g'), '')        // strip thousands separator
+    .replace(new RegExp(escapedDecimal), '.')           // normalise decimal to '.'
     .replace(/×10\s*[\^]?\s*([−\-]?\d+)/g, 'e$1')
-    .replace(/−/g, '-'));
+    .replace(/−/g, '-');
+  let num = parseFloat(normalised);
 
   if (isNaN(num) || num === 0) {
     $results.classList.remove('visible');
@@ -327,10 +338,10 @@ function formatSI(val) {
 
 const WEIGHT_SCALES = [
   { threshold: 1e12, divisor: 1e12, unit: 'Gt' },
-  { threshold: 1e9,  divisor: 1e9,  unit: 'Mt' },
-  { threshold: 1e6,  divisor: 1e6,  unit: 'kt' },
-  { threshold: 1e3,  divisor: 1e3,  unit: 't' },
-  { threshold: 1,    divisor: 1,    unit: 'kg' },
+  { threshold: 1e9, divisor: 1e9, unit: 'Mt' },
+  { threshold: 1e6, divisor: 1e6, unit: 'kt' },
+  { threshold: 1e3, divisor: 1e3, unit: 't' },
+  { threshold: 1, divisor: 1, unit: 'kg' },
   { threshold: 1e-3, divisor: 1e-3, unit: 'g' },
   { threshold: 1e-6, divisor: 1e-6, unit: 'mg' },
   { threshold: 1e-9, divisor: 1e-9, unit: 'µg' },
