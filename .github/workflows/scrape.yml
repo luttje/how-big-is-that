@@ -42,3 +42,4 @@ jobs:
       with:
         commit_message: "chore: update scraped data"
         file_pattern: 'data/*.json site/data/*.json'
+        add_options: '--ignore-unmatch'
