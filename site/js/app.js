@@ -121,10 +121,22 @@ $unitInput.addEventListener('input', () => {
 $valueInput.addEventListener('keydown', e => {
   if (e.key === 'Enter')
     update();
+
+  // If the user presses right and they're at the end of the value input, move to the unit input
+  if (e.key === 'ArrowRight' && $valueInput.selectionEnd === $valueInput.value.length) {
+    $unitInput.focus();
+    e.preventDefault();
+  }
 });
 $unitInput.addEventListener('keydown', e => {
   if (e.key === 'Enter')
     update();
+
+  // If the user presses left and they're at the start of the unit input, move back to value input
+  if (e.key === 'ArrowLeft' && $unitInput.selectionStart === 0) {
+    $valueInput.focus();
+    e.preventDefault();
+  }
 });
 
 // Core update function
