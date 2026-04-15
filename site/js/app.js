@@ -64,6 +64,7 @@ radios.forEach(r => {
     currentType = r.value;
 
     $unitInput.placeholder = SI_LABELS[currentType] || 'kg';
+    $unitInput.value = '';
 
     update();
   });
