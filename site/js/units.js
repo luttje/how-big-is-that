@@ -41,7 +41,7 @@ const UNIT_TABLE = {
   Rg: { type: 'weight', toSI: 1e24 },        // ronnagram (2022 SI; e.g. Earth mass ≈ 6 Rg)
   Qg: { type: 'weight', toSI: 1e27 },        // quettagram (2022 SI; e.g. Jupiter mass ≈ 2 Qg)
   Da: { type: 'weight', toSI: 1.66054e-27 }, // dalton
-  u: { type: 'weight', toSI: 1.66054e-27 },  // atomic mass unit
+  u: { type: 'weight', toSI: 1.66054e-27 }, // atomic mass unit
   eV: { type: 'weight', toSI: 1.78266e-36 }, // eV/c² (mass-energy)
 
   // Length (base: m)
@@ -64,7 +64,7 @@ const UNIT_TABLE = {
   ft: { type: 'length', toSI: 0.3048 },
   yd: { type: 'length', toSI: 0.9144 },
   mi: { type: 'length', toSI: 1609.344 },
-  nmi: { type: 'length', toSI: 1852 },       // nautical mile
+  nmi: { type: 'length', toSI: 1852 },        // nautical mile
   au: { type: 'length', toSI: 1.496e11 },    // astronomical unit
   AU: { type: 'length', toSI: 1.496e11 },
   ly: { type: 'length', toSI: 9.461e15 },    // light-year
@@ -160,9 +160,12 @@ const UNIT_TABLE = {
  * Look up a unit string. Returns { type, toSI } or null.
  */
 export function lookupUnit(unitStr) {
-  if (!unitStr) return null;
+  if (!unitStr)
+    return null;
+
   // Normalize Greek small letter mu (U+03BC) to SI Micro Sign (U+00B5)
   const cleaned = unitStr.trim().replace(/\u03bc/g, '\u00b5');
+
   return UNIT_TABLE[cleaned] || null;
 }
 
@@ -172,7 +175,10 @@ export function lookupUnit(unitStr) {
  */
 export function toSI(value, fromUnit) {
   const info = lookupUnit(fromUnit);
-  if (!info) return null;
+
+  if (!info)
+    return null;
+
   return { valueSI: value * info.toSI, type: info.type };
 }
 
@@ -190,6 +196,7 @@ export function unitsForType(type) {
  */
 export function siLabel(type) {
   const map = { weight: 'kg', length: 'm', area: 'm²', volume: 'm³' };
+
   return map[type] || type;
 }
 
