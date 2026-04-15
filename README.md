@@ -21,6 +21,10 @@ npm run scrape:solar-system # only Solar System
 npm run build # build site from data/
 ```
 
+> [!NOTE]
+> When making a pull request we will run the scrapers and build the site, so you don't need to worry about that.
+> If you do want to run the scrapers locally, please make sure to use the same Node version as specified in `.nvmrc` to avoid any unwanted differences in the generated data files.
+
 ## Data sources
 
 | Source | Entries | What | License |
