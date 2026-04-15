@@ -41,4 +41,4 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v7
       with:
         commit_message: "chore: update scraped data"
-        file_pattern: 'data/ site/data/'
+        file_pattern: 'site/data/'
